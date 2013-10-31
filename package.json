@@ -1,6 +1,6 @@
 {
   "name": "mongo-shell-methods",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Structured description of MongoDB's shell methods",
   "keywords": [],
   "dependencies": {},
