@@ -1,0 +1,900 @@
+{
+  "collection": [
+    {
+      "name": "aggregate",
+      "description": "Provides access to the aggregation pipeline.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.aggregate/#db.collection.aggregate"
+    },
+    {
+      "name": "count",
+      "description": "Wraps count to return a count of the number of documents in a collection or matching a query.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.count/#db.collection.count"
+    },
+    {
+      "name": "createIndex",
+      "description": "Builds an index on a collection. Use db.collection.ensureIndex().",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.createIndex/#db.collection.createIndex"
+    },
+    {
+      "name": "getIndexStats",
+      "description": "Renders a human-readable view of the data collected by indexStats which reflects B-tree utilization.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.getIndexStats/#db.collection.getIndexStats"
+    },
+    {
+      "name": "indexStats",
+      "description": "Renders a human-readable view of the data collected by indexStats which reflects B-tree utilization.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.indexStats/#db.collection.indexStats"
+    },
+    {
+      "name": "dataSize",
+      "description": "Returns the size of the collection. Wraps the size field in the output of the collStats.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.dataSize/#db.collection.dataSize"
+    },
+    {
+      "name": "distinct",
+      "description": "Returns an array of documents that have distinct values for the specified field.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.distinct/#db.collection.distinct"
+    },
+    {
+      "name": "drop",
+      "description": "Removes the specified collection from the database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.drop/#db.collection.drop"
+    },
+    {
+      "name": "dropIndex",
+      "description": "Removes a specified index on a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.dropIndex/#db.collection.dropIndex"
+    },
+    {
+      "name": "dropIndexes",
+      "description": "Removes all indexes on a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.dropIndexes/#db.collection.dropIndexes"
+    },
+    {
+      "name": "ensureIndex",
+      "description": "Creates an index if it does not currently exist. If the index exists ensureIndex() does nothing.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.ensureIndex/#db.collection.ensureIndex"
+    },
+    {
+      "name": "find",
+      "description": "Performs a query on a collection and returns a cursor object.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.find/#db.collection.find"
+    },
+    {
+      "name": "findAndModify",
+      "description": "Atomically modifies and returns a single document.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.findAndModify/#db.collection.findAndModify"
+    },
+    {
+      "name": "findOne",
+      "description": "Performs a query and returns a single document.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.findOne/#db.collection.findOne"
+    },
+    {
+      "name": "getIndexes",
+      "description": "Returns an array of documents that describe the existing indexes on a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.getIndexes/#db.collection.getIndexes"
+    },
+    {
+      "name": "getShardDistribution",
+      "description": "For collections in sharded clusters, db.collection.getShardDistribution() reports data of chunk distribution.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.getShardDistribution/#db.collection.getShardDistribution"
+    },
+    {
+      "name": "getShardVersion",
+      "description": "Internal diagnostic method for shard cluster.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.getShardVersion/#db.collection.getShardVersion"
+    },
+    {
+      "name": "group",
+      "description": "Provides simple data aggregation function. Groups documents in a collection by a key, and processes the results. Use aggregate() for more complex data aggregation.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.group/#db.collection.group"
+    },
+    {
+      "name": "insert",
+      "description": "Creates a new document in a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.insert/#db.collection.insert"
+    },
+    {
+      "name": "isCapped",
+      "description": "Reports if a collection is a capped collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.isCapped/#db.collection.isCapped"
+    },
+    {
+      "name": "mapReduce",
+      "description": "Performs map-reduce style data aggregation.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.mapReduce/#db.collection.mapReduce"
+    },
+    {
+      "name": "reIndex",
+      "description": "Rebuilds all existing indexes on a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.reIndex/#db.collection.reIndex"
+    },
+    {
+      "name": "remove",
+      "description": "Deletes documents from a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.remove/#db.collection.remove"
+    },
+    {
+      "name": "renameCollection",
+      "description": "Changes the name of a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.renameCollection/#db.collection.renameCollection"
+    },
+    {
+      "name": "save",
+      "description": "Provides a wrapper around an insert() and update() to insert new documents.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.save/#db.collection.save"
+    },
+    {
+      "name": "stats",
+      "description": "Reports on the state of a collection. Provides a wrapper around the collStats.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.stats/#db.collection.stats"
+    },
+    {
+      "name": "storageSize",
+      "description": "Reports the total size used by the collection in bytes. Provides a wrapper around the storageSize field of the collStats output.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.storageSize/#db.collection.storageSize"
+    },
+    {
+      "name": "totalSize",
+      "description": "Reports the total size of a collection, including the size of all documents and all indexes on a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.totalSize/#db.collection.totalSize"
+    },
+    {
+      "name": "totalIndexSize",
+      "description": "Reports the total size used by the indexes on a collection. Provides a wrapper around the totalIndexSize field of the collStats output.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.totalIndexSize/#db.collection.totalIndexSize"
+    },
+    {
+      "name": "update",
+      "description": "Modifies a document in a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.update/#db.collection.update"
+    },
+    {
+      "name": "validate",
+      "description": "Performs diagnostic operations on a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.collection.validate/#db.collection.validate"
+    }
+  ],
+  "cursor": [
+    {
+      "name": "addOption",
+      "description": "Adds special wire protocol flags that modify the behavior of the query.&#8217;",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.addOption/#cursor.addOption"
+    },
+    {
+      "name": "batchSize",
+      "description": "Controls the number of documents MongoDB will return to the client in a single network message.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.batchSize/#cursor.batchSize"
+    },
+    {
+      "name": "count",
+      "description": "Returns a count of the documents in a cursor.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.count/#cursor.count"
+    },
+    {
+      "name": "explain",
+      "description": "Reports on the query execution plan, including index use, for a cursor.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.explain/#cursor.explain"
+    },
+    {
+      "name": "forEach",
+      "description": "Applies a JavaScript function for every document in a cursor.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.forEach/#cursor.forEach"
+    },
+    {
+      "name": "hasNext",
+      "description": "Returns true if the cursor has documents and can be iterated.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.hasNext/#cursor.hasNext"
+    },
+    {
+      "name": "hint",
+      "description": "Forces MongoDB to use a specific index for a query.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.hint/#cursor.hint"
+    },
+    {
+      "name": "limit",
+      "description": "Constrains the size of a cursor&#8217;s result set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.limit/#cursor.limit"
+    },
+    {
+      "name": "map",
+      "description": "Applies a function to each document in a cursor and collects the return values in an array.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.map/#cursor.map"
+    },
+    {
+      "name": "max",
+      "description": "Specifies an exclusive upper index bound for a cursor. For use with cursor.hint()",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.max/#cursor.max"
+    },
+    {
+      "name": "min",
+      "description": "Specifies an inclusive lower index bound for a cursor. For use with cursor.hint()",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.min/#cursor.min"
+    },
+    {
+      "name": "next",
+      "description": "Returns the next document in a cursor.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.next/#cursor.next"
+    },
+    {
+      "name": "objsLeftInBatch",
+      "description": "Returns the number of documents left in the current cursor batch.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.objsLeftInBatch/#cursor.objsLeftInBatch"
+    },
+    {
+      "name": "readPref",
+      "description": "Specifies a read preference to a cursor to control how the client directs queries to a replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.readPref/#cursor.readPref"
+    },
+    {
+      "name": "showDiskLoc",
+      "description": "Returns a cursor with modified documents that include the on-disk location of the document.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.showDiskLoc/#cursor.showDiskLoc"
+    },
+    {
+      "name": "size",
+      "description": "Returns a count of the documents in the cursor after applying skip() and limit() methods.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.size/#cursor.size"
+    },
+    {
+      "name": "skip",
+      "description": "Returns a cursor that begins returning results only after passing or skipping a number of documents.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.skip/#cursor.skip"
+    },
+    {
+      "name": "snapshot",
+      "description": "Forces the cursor to use the index on the _id field. Ensures that the cursor returns each document, with regards to the value of the _id field, only once.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.snapshot/#cursor.snapshot"
+    },
+    {
+      "name": "sort",
+      "description": "Returns results ordered according to a sort specification.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.sort/#cursor.sort"
+    },
+    {
+      "name": "toArray",
+      "description": "Returns an array that contains all documents returned by the cursor.",
+      "href": "http://docs.mongodb.org/manual/reference/method/cursor.toArray/#cursor.toArray"
+    }
+  ],
+  "database": [
+    {
+      "name": "addUser",
+      "description": "Adds a user to a database, and allows administrators to configure the user&#8217;s privileges.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.addUser/#db.addUser"
+    },
+    {
+      "name": "auth",
+      "description": "Authenticates a user to a database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.auth/#db.auth"
+    },
+    {
+      "name": "changeUserPassword",
+      "description": "Changes an existing user&#8217;s password.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.changeUserPassword/#db.changeUserPassword"
+    },
+    {
+      "name": "cloneCollection",
+      "description": "Copies data directly between MongoDB instances. Wraps cloneCollection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.cloneCollection/#db.cloneCollection"
+    },
+    {
+      "name": "cloneDatabase",
+      "description": "Copies a database from a remote host to the current host. Wraps clone.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.cloneDatabase/#db.cloneDatabase"
+    },
+    {
+      "name": "commandHelp",
+      "description": "Returns help information for a database command.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.commandHelp/#db.commandHelp"
+    },
+    {
+      "name": "copyDatabase",
+      "description": "Copies a database to another database on the current host. Wraps copydb.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.copyDatabase/#db.copyDatabase"
+    },
+    {
+      "name": "createCollection",
+      "description": "Creates a new collection. Commonly used to create a capped collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.createCollection/#db.createCollection"
+    },
+    {
+      "name": "currentOp",
+      "description": "Reports the current in-progress operations.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.currentOp/#db.currentOp"
+    },
+    {
+      "name": "dropDatabase",
+      "description": "Removes the current database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.dropDatabase/#db.dropDatabase"
+    },
+    {
+      "name": "eval",
+      "description": "Passes a JavaScript function to the mongod instance for server-side JavaScript evaluation.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.eval/#db.eval"
+    },
+    {
+      "name": "fsyncLock",
+      "description": "Flushes writes to disk and locks the database to prevent write operations and assist backup operations. Wraps fsync.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.fsyncLock/#db.fsyncLock"
+    },
+    {
+      "name": "fsyncUnlock",
+      "description": "Allows writes to continue on a database locked with db.fsyncLock().",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.fsyncUnlock/#db.fsyncUnlock"
+    },
+    {
+      "name": "getCollection",
+      "description": "Returns a collection object. Used to access collections with names that are not valid in the mongo shell.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getCollection/#db.getCollection"
+    },
+    {
+      "name": "getCollectionNames",
+      "description": "Lists all collections in the current database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getCollectionNames/#db.getCollectionNames"
+    },
+    {
+      "name": "getLastError",
+      "description": "Checks and returns the status of the last operation. Wraps getLastError.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getLastError/#db.getLastError"
+    },
+    {
+      "name": "getLastErrorObj",
+      "description": "Returns the status document for the last operation.  Wraps getLastError.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getLastErrorObj/#db.getLastErrorObj"
+    },
+    {
+      "name": "getMongo",
+      "description": "Returns the Mongo() connection object for the current connection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getMongo/#db.getMongo"
+    },
+    {
+      "name": "getName",
+      "description": "Returns the name of the current database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getName/#db.getName"
+    },
+    {
+      "name": "getPrevError",
+      "description": "Returns a status document containing all errors since the last error reset. Wraps getPrevError.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getPrevError/#db.getPrevError"
+    },
+    {
+      "name": "getProfilingLevel",
+      "description": "Returns the current profiling level for database operations.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getProfilingLevel/#db.getProfilingLevel"
+    },
+    {
+      "name": "getProfilingStatus",
+      "description": "Returns a document that reflects the current profiling level and the profiling threshold.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getProfilingStatus/#db.getProfilingStatus"
+    },
+    {
+      "name": "getReplicationInfo",
+      "description": "Returns a document with replication statistics.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getReplicationInfo/#db.getReplicationInfo"
+    },
+    {
+      "name": "getSiblingDB",
+      "description": "Provides access to the specified database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.getSiblingDB/#db.getSiblingDB"
+    },
+    {
+      "name": "help",
+      "description": "Displays descriptions of common db object methods.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.help/#db.help"
+    },
+    {
+      "name": "hostInfo",
+      "description": "Returns a document with information about the system MongoDB runs on. Wraps hostInfo",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.hostInfo/#db.hostInfo"
+    },
+    {
+      "name": "isMaster",
+      "description": "Returns a document that reports the state of the replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.isMaster/#db.isMaster"
+    },
+    {
+      "name": "killOp",
+      "description": "Terminates a specified operation.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.killOp/#db.killOp"
+    },
+    {
+      "name": "listCommands",
+      "description": "Displays a list of common database commands.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.listCommands/#db.listCommands"
+    },
+    {
+      "name": "loadServerScripts",
+      "description": "Loads all scripts in the system.js collection for the current database into the shell session.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.loadServerScripts/#db.loadServerScripts"
+    },
+    {
+      "name": "logout",
+      "description": "Ends an authenticated session.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.logout/#db.logout"
+    },
+    {
+      "name": "printCollectionStats",
+      "description": "Prints statistics from every collection. Wraps db.collection.stats().",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.printCollectionStats/#db.printCollectionStats"
+    },
+    {
+      "name": "printReplicationInfo",
+      "description": "Prints a report of the status of the replica set from the perspective of the primary.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.printReplicationInfo/#db.printReplicationInfo"
+    },
+    {
+      "name": "printShardingStatus",
+      "description": "Prints a report of the sharding configuration and the chunk ranges.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.printShardingStatus/#db.printShardingStatus"
+    },
+    {
+      "name": "printSlaveReplicationInfo",
+      "description": "Prints a report of the status of the replica set from the perspective of the secondary.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.printSlaveReplicationInfo/#db.printSlaveReplicationInfo"
+    },
+    {
+      "name": "removeUser",
+      "description": "Removes a user from a database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.removeUser/#db.removeUser"
+    },
+    {
+      "name": "repairDatabase",
+      "description": "Runs a repair routine on the current database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.repairDatabase/#db.repairDatabase"
+    },
+    {
+      "name": "resetError",
+      "description": "Resets the error message returned by db.getPrevError() and getPrevError.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.resetError/#db.resetError"
+    },
+    {
+      "name": "runCommand",
+      "description": "Runs a database command.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.runCommand/#db.runCommand"
+    },
+    {
+      "name": "serverBuildInfo",
+      "description": "Returns a document that displays the compilation parameters for the mongod instance. Wraps buildinfo.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.serverBuildInfo/#db.serverBuildInfo"
+    },
+    {
+      "name": "serverStatus",
+      "description": "Returns a document that provides an overview of the state of the database process.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.serverStatus/#db.serverStatus"
+    },
+    {
+      "name": "setProfilingLevel",
+      "description": "Modifies the current level of database profiling.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.setProfilingLevel/#db.setProfilingLevel"
+    },
+    {
+      "name": "shutdownServer",
+      "description": "Shuts down the current mongod or mongos process cleanly and safely.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.shutdownServer/#db.shutdownServer"
+    },
+    {
+      "name": "stats",
+      "description": "Returns a document that reports on the state of the current database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.stats/#db.stats"
+    },
+    {
+      "name": "version",
+      "description": "Returns the version of the mongod instance.",
+      "href": "http://docs.mongodb.org/manual/reference/method/db.version/#db.version"
+    }
+  ],
+  "replication": [
+    {
+      "name": "add",
+      "description": "Adds a member to a replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.add/#rs.add"
+    },
+    {
+      "name": "addArb",
+      "description": "Adds an arbiter to a replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.addArb/#rs.addArb"
+    },
+    {
+      "name": "conf",
+      "description": "Returns the replica set configuration document.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.conf/#rs.conf"
+    },
+    {
+      "name": "freeze",
+      "description": "Prevents the current member from seeking election as primary for a period of time.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.freeze/#rs.freeze"
+    },
+    {
+      "name": "help",
+      "description": "Returns basic help text for replica set functions.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.help/#rs.help"
+    },
+    {
+      "name": "initiate",
+      "description": "Initializes a new replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.initiate/#rs.initiate"
+    },
+    {
+      "name": "reconfig",
+      "description": "Re-configures a replica set by applying a new replica set configuration object.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.reconfig/#rs.reconfig"
+    },
+    {
+      "name": "remove",
+      "description": "Remove a member from a replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.remove/#rs.remove"
+    },
+    {
+      "name": "slaveOk",
+      "description": "Sets the slaveOk property for the current connection. Deprecated. Use readPref() and Mongo.setReadPref() to set read preference.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.slaveOk/#rs.slaveOk"
+    },
+    {
+      "name": "status",
+      "description": "Returns a document with information about the state of the replica set.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.status/#rs.status"
+    },
+    {
+      "name": "stepDown",
+      "description": "Causes the current primary to become a secondary which forces an election.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.stepDown/#rs.stepDown"
+    },
+    {
+      "name": "syncFrom",
+      "description": "Sets the member that this replica set member will sync from, overriding the default sync target selection logic.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rs.syncFrom/#rs.syncFrom"
+    }
+  ],
+  "sharding": [
+    {
+      "name": "_adminCommand",
+      "description": "Runs a database command against the admin database, like db.runCommand(), but can confirm that it is issued against a mongos.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh._adminCommand/#sh._adminCommand"
+    },
+    {
+      "name": "_checkFullName",
+      "description": "Tests a namespace to determine if its well formed.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh._checkFullName/#sh._checkFullName"
+    },
+    {
+      "name": "_checkMongos",
+      "description": "Tests to see if the mongo shell is connected to a mongos instance.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh._checkMongos/#sh._checkMongos"
+    },
+    {
+      "name": "_lastMigration",
+      "description": "Reports on the last chunk migration.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh._lastMigration/#sh._lastMigration"
+    },
+    {
+      "name": "addShard",
+      "description": "Adds a shard to a sharded cluster.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.addShard/#sh.addShard"
+    },
+    {
+      "name": "addShardTag",
+      "description": "Associates a shard with a tag, to support tag aware sharding.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.addShardTag/#sh.addShardTag"
+    },
+    {
+      "name": "addTagRange",
+      "description": "Associates range of shard keys with a shard tag, to support tag aware sharding.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.addTagRange/#sh.addTagRange"
+    },
+    {
+      "name": "disableBalancing",
+      "description": "Disable balancing on a single collection in a sharded database. Does not affect balancing of other collections in a sharded cluster.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.disableBalancing/#sh.disableBalancing"
+    },
+    {
+      "name": "enableBalancing",
+      "description": "Activates the sharded collection balancer process if previously disabled using sh.disableBalancing().",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.enableBalancing/#sh.enableBalancing"
+    },
+    {
+      "name": "enableSharding",
+      "description": "Enables sharding on a specific database.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.enableSharding/#sh.enableSharding"
+    },
+    {
+      "name": "getBalancerHost",
+      "description": "Returns the name of a mongos that&#8217;s responsible for the balancer process.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.getBalancerHost/#sh.getBalancerHost"
+    },
+    {
+      "name": "getBalancerState",
+      "description": "Returns a boolean to report if the balancer is currently enabled.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.getBalancerState/#sh.getBalancerState"
+    },
+    {
+      "name": "help",
+      "description": "Returns help text for the sh methods.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.help/#sh.help"
+    },
+    {
+      "name": "isBalancerRunning",
+      "description": "Returns a boolean to report if the balancer process is currently migrating chunks.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.isBalancerRunning/#sh.isBalancerRunning"
+    },
+    {
+      "name": "moveChunk",
+      "description": "Migrates a chunk in a sharded cluster.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.moveChunk/#sh.moveChunk"
+    },
+    {
+      "name": "removeShardTag",
+      "description": "Removes the association between a shard and a shard tag shard tag.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.removeShardTag/#sh.removeShardTag"
+    },
+    {
+      "name": "setBalancerState",
+      "description": "Enables or disables the balancer which migrates chunks between shards.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.setBalancerState/#sh.setBalancerState"
+    },
+    {
+      "name": "shardCollection",
+      "description": "Enables sharding for a collection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.shardCollection/#sh.shardCollection"
+    },
+    {
+      "name": "splitAt",
+      "description": "Divides an existing chunk into two chunks using a specific value of the shard key as the dividing point.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.splitAt/#sh.splitAt"
+    },
+    {
+      "name": "splitFind",
+      "description": "Divides an existing chunk that contains a document matching a query into two approximately equal chunks.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.splitFind/#sh.splitFind"
+    },
+    {
+      "name": "startBalancer",
+      "description": "Enables the balancer and waits for balancing to start.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.startBalancer/#sh.startBalancer"
+    },
+    {
+      "name": "status",
+      "description": "Reports on the status of a sharded cluster, as db.printShardingStatus().",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.status/#sh.status"
+    },
+    {
+      "name": "stopBalancer",
+      "description": "Disables the balancer and waits for any in progress balancing rounds to complete.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.stopBalancer/#sh.stopBalancer"
+    },
+    {
+      "name": "waitForBalancer",
+      "description": "Internal. Waits for the balancer state to change.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.waitForBalancer/#sh.waitForBalancer"
+    },
+    {
+      "name": "waitForBalancerOff",
+      "description": "Internal. Waits until the balancer stops running.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.waitForBalancerOff/#sh.waitForBalancerOff"
+    },
+    {
+      "name": "waitForDLock",
+      "description": "Internal. Waits for a specified distributed sharded cluster lock.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.waitForDLock/#sh.waitForDLock"
+    },
+    {
+      "name": "waitForPingChange",
+      "description": "Internal. Waits for a change in ping state from one of the mongos in the sharded cluster.",
+      "href": "http://docs.mongodb.org/manual/reference/method/sh.waitForPingChange/#sh.waitForPingChange"
+    }
+  ],
+  "subprocess": [
+    {
+      "name": "clearRawMongoProgramOutput",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/clearRawMongoProgramOutput/#clearRawMongoProgramOutput"
+    },
+    {
+      "name": "rawMongoProgramOutput",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rawMongoProgramOutput/#rawMongoProgramOutput"
+    },
+    {
+      "name": "run",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "runMongoProgram",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/runMongoProgram/#runMongoProgram"
+    },
+    {
+      "name": "runProgram",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/runProgram/#runProgram"
+    },
+    {
+      "name": "startMongoProgram",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "stopMongoProgram",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/stopMongoProgram/#stopMongoProgram"
+    },
+    {
+      "name": "stopMongoProgramByPid",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/stopMongoProgramByPid/#stopMongoProgramByPid"
+    },
+    {
+      "name": "stopMongod",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/stopMongod/#stopMongod"
+    },
+    {
+      "name": "waitMongoProgramOnPort",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/waitMongoProgramOnPort/#waitMongoProgramOnPort"
+    },
+    {
+      "name": "waitProgram",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/waitProgram/#waitProgram"
+    }
+  ],
+  "connection": [
+    {
+      "name": "getDB",
+      "description": "Returns a database object.",
+      "href": "http://docs.mongodb.org/manual/reference/method/Mongo.getDB/#Mongo.getDB"
+    },
+    {
+      "name": "getReadPrefMode",
+      "description": "Returns the current read preference mode for the MongoDB connection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/Mongo.getReadPrefMode/#Mongo.getReadPrefMode"
+    },
+    {
+      "name": "getReadPrefTagSet",
+      "description": "Returns the read preference tag set for the MongoDB connection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/Mongo.getReadPrefTagSet/#Mongo.getReadPrefTagSet"
+    },
+    {
+      "name": "setReadPref",
+      "description": "Sets the read preference for the MongoDB connection.",
+      "href": "http://docs.mongodb.org/manual/reference/method/Mongo.setReadPref/#Mongo.setReadPref"
+    },
+    {
+      "name": "setSlaveOk",
+      "description": "Allows operations on the current connection to read from secondary members.",
+      "href": "http://docs.mongodb.org/manual/reference/method/Mongo.setSlaveOk/#Mongo.setSlaveOk"
+    },
+    {
+      "name": "Mongo",
+      "description": "Creates a new connection object.",
+      "href": "http://docs.mongodb.org/manual/reference/method/Mongo/#Mongo"
+    },
+    {
+      "name": "connect",
+      "description": "Connects to a MongoDB instance and to a specified database on that instance.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    }
+  ],
+  "native": [
+    {
+      "name": "cat",
+      "description": "Returns the contents of the specified file.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "version",
+      "description": "Returns the current version of the mongo shell instance.",
+      "href": "http://docs.mongodb.org/manual/reference/program/mongo/#bin.mongo"
+    },
+    {
+      "name": "cd",
+      "description": "Changes the current working directory to the specified path.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "copyDbpath",
+      "description": "Copies a local dbpath. For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/copyDbpath/#copyDbpath"
+    },
+    {
+      "name": "resetDbpath",
+      "description": "Removes a local dbpath. For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/resetDbpath/#resetDbpath"
+    },
+    {
+      "name": "fuzzFile",
+      "description": "For internal use to support testing.",
+      "href": "http://docs.mongodb.org/manual/reference/method/fuzzFile/#fuzzFile"
+    },
+    {
+      "name": "getHostName",
+      "description": "Returns the hostname of the system running the mongo shell.",
+      "href": "http://docs.mongodb.org/manual/reference/method/getHostName/#getHostName"
+    },
+    {
+      "name": "getMemInfo",
+      "description": "Returns a document that reports the amount of memory used by the shell.",
+      "href": "http://docs.mongodb.org/manual/reference/method/getMemInfo/#getMemInfo"
+    },
+    {
+      "name": "hostname",
+      "description": "Returns the hostname of the system running the shell.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "_isWindows",
+      "description": "Returns true if the shell runs on a Windows system; false if a Unix or Linux system.",
+      "href": "http://docs.mongodb.org/manual/reference/method/isWindows/#_isWindows"
+    },
+    {
+      "name": "listFiles",
+      "description": "Returns an array of documents that give the name and size of each object in the directory.",
+      "href": "http://docs.mongodb.org/manual/reference/method/listFiles/#listFiles"
+    },
+    {
+      "name": "load",
+      "description": "Loads and runs a JavaScript file in the shell.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "ls",
+      "description": "Returns a list of the files in the current directory.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "md5sumFile",
+      "description": "The md5 hash of the specified file.",
+      "href": "http://docs.mongodb.org/manual/reference/method/md5sumFile/#md5sumFile"
+    },
+    {
+      "name": "mkdir",
+      "description": "Creates a directory at the specified path.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "pwd",
+      "description": "Returns the current directory.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "quit",
+      "description": "Exits the current shell session.",
+      "href": "http://docs.mongodb.org/manual/reference/method/"
+    },
+    {
+      "name": "_rand",
+      "description": "Returns a random number between 0 and 1.",
+      "href": "http://docs.mongodb.org/manual/reference/method/rand/#_rand"
+    },
+    {
+      "name": "removeFile",
+      "description": "Removes the specified file from the local file system.",
+      "href": "http://docs.mongodb.org/manual/reference/method/removeFile/#removeFile"
+    },
+    {
+      "name": "_srand",
+      "description": "For internal use.",
+      "href": "http://docs.mongodb.org/manual/reference/method/srand/#_srand"
+    }
+  ],
+  "objectid": [
+    {
+      "name": "getTimestamp",
+      "description": "Returns the timestamp portion of an ObjectId.",
+      "href": "http://docs.mongodb.org/manual/reference/method/ObjectId.getTimestamp/#ObjectId.getTimestamp"
+    },
+    {
+      "name": "toString",
+      "description": "Displays the string representation of an ObjectId.",
+      "href": "http://docs.mongodb.org/manual/reference/method/ObjectId.toString/#ObjectId.toString"
+    },
+    {
+      "name": "valueOf",
+      "description": "Displays the str attribute of an ObjectId as a hexadecimal string.",
+      "href": "http://docs.mongodb.org/manual/reference/method/ObjectId.valueOf/#ObjectId.valueOf"
+    }
+  ]
+}
