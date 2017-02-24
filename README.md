@@ -1,5 +1,7 @@
 # mongo-shell-methods
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/mongo-shell-methods.svg)](https://greenkeeper.io/)
+
 Structured description of MongoDB's shell methods
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/mongo-shell-methods/master.svg)](https://travis-ci.org/ForbesLindesay/mongo-shell-methods)

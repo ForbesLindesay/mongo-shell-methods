@@ -5,10 +5,10 @@
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
-    "promise": "~3.2.0",
-    "htmlparser2": "~3.3.0",
-    "request": "~2.27.0",
-    "testit": "~1.1.0"
+    "promise": "~7.1.1",
+    "htmlparser2": "~3.9.2",
+    "request": "~2.79.0",
+    "testit": "~2.1.3"
   },
   "scripts": {
     "test": "node test"
